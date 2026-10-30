@@ -1,0 +1,30 @@
+policy:
+  thresholds:
+    nudge_prepaid: 0.38
+    confirm: 0.52
+    hold_cancel: 0.72
+  risk_adjustments:
+    suspect_name: 0.30
+    weak_address: 0.18
+    invalid_phone: 0.13
+    invalid_pincode: 0.12
+    prior_rto: 0.12
+    repeat_without_prior_rto: -0.05
+  economics:
+    forward_shipping_inr: 65
+    return_shipping_inr: 65
+    packaging_handling_inr: 25
+    damaged_return_rate: 0.08
+    product_cost_inr: 180
+    gross_margin_rate: 0.62
+    prepaid_discount_inr: 25
+    cod_rto_rate: 0.28
+    prepaid_rto_rate: 0.04
+  flow:
+    confirmation_response_rate: 0.65
+    confirmation_rto_reduction: 0.60
+    prepaid_nudge_take_rate: 0.35
+    timeout_hours: 24
+  llm:
+    enabled: false
+    model: gpt-4o-mini

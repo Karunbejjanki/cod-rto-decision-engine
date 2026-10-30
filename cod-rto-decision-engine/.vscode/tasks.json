@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Test COD RTO prototype",
+			"type": "shell",
+			"command": "python",
+			"args": [
+				"-m",
+				"unittest",
+				"discover",
+				"-s",
+				"tests",
+				"-v"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		}
+	]
+}
